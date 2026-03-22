@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <IsPublishable>false</IsPublishable>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="TUnit" />
+    <PackageReference Include="TUnit.Mocks" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TUnit.AutoMocker\TUnit.AutoMocker.csproj" />
+    <ProjectReference Include="..\TUnit.AutoMocker.Generators\TUnit.AutoMocker.Generators.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+  </ItemGroup>
+</Project>

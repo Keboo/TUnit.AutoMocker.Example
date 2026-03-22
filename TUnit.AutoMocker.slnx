@@ -1,0 +1,21 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Build.targets" />
+    <File Path="Directory.Packages.props" />
+    <File Path="global.json" />
+    <File Path="NuGet.config" />
+    <File Path="NuGetPackageReadme.md" />
+  </Folder>
+  <Folder Name="/Solution Items/.github/">
+    <File Path=".github/dependabot.yml" />
+  </Folder>
+  <Folder Name="/Solution Items/.github/workflows/">
+    <File Path=".github/workflows/build-and-deploy.yml" />
+    <File Path=".github/workflows/pr-code-coverage-comment.yml" />
+  </Folder>
+  <Project Path="TUnit.AutoMocker/TUnit.AutoMocker.csproj" />
+  <Project Path="TUnit.AutoMocker.Generators/TUnit.AutoMocker.Generators.csproj" />
+  <Project Path="TUnit.AutoMocker.Tests/TUnit.AutoMocker.Tests.csproj" />
+</Solution>

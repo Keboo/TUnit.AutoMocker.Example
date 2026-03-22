@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net8.0</TargetFrameworks>
+    <TUnitMockImplicitUsings>disable</TUnitMockImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup Label="NuGet">
+    <None Include="NuGetIcon.png" Pack="true" PackagePath="\" Condition="Exists('NuGetIcon.png')" />
+    <None Include="..\NuGetPackageReadme.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="TUnit.Mocks" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TUnit.AutoMocker.Generators\TUnit.AutoMocker.Generators.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+    <None Include="..\TUnit.AutoMocker.Generators\bin\$(Configuration)\netstandard2.0\TUnit.AutoMocker.Generators.dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+  </ItemGroup>
+</Project>
