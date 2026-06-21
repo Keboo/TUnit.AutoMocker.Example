@@ -29,6 +29,6 @@
     <PackageVersion Include="TUnit" Version="1.19.57" />
     <PackageVersion Include="TUnit.Assertions" Version="1.19.57" />
     <PackageVersion Include="TUnit.Engine" Version="1.19.57" />
-    <PackageVersion Include="TUnit.Mocks" Version="1.21.0" />
+    <PackageVersion Include="TUnit.Mocks" Version="1.56.18" />
   </ItemGroup>
 </Project>
